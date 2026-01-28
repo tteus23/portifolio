@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevClub Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+</head>
+
+<body>
+    <header>
+        <div class="logo">DevClub Store</div>
+        <nav>
+            <ul>
+                <li><a href="#main">Inicio</a></li>
+                <li><a href="#prod">Produtos</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container" id="main">
+        <div class="tech-circulo">
+            <div class="circulo"></div>
+            <div class="circulo"></div>
+            <div class="circulo"></div>
+            <div class="circulo"></div>
+        </div>
+
+        <div class="list">
+            <div class="item active">
+                <div class="produto-img">
+                    <img src="{{ asset('img/apple-watch.png') }}" alt="Apple Watch">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Novo Lançamento</p>
+                    <p class="product-name">Apple Watch Series 10</p>
+                    <p class="desc">O smartwatch mais avançado do mercado.
+                        Monitoramento completo de saúde, GPS integrado, tela AMOLED de alta resolução e bateria de longa
+                        duração. Perfeito para acompanhar seu estilo de vida ativo
+                    </p>
+                    <button class="btn">Saiba Mais!</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="produto-img">
+                    <img src="{{ asset('img/air-pods.png') }}" alt="Air Pods Max">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Som Premium</p>
+                    <p class="product-name">Air Pods Max</p>
+                    <p class="desc">
+                        Experimente o som em sua forma mais pura. Cancelamento de ruído adaptativo, qualidade de áudio
+                        excepcional e design ergonômico para o máximo conforto. Sua música nunca soou tão bem.
+                    </p>
+                    <button class="btn">Saiba Mais!</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="produto-img">
+                    <img src="{{ asset('img/vision-pro.png') }}" alt="Vision Pro">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Alta Performance</p>
+                    <p class="product-name">Vision Pro</p>
+                    <p class="desc">Realidade aumentada imersiva com o Apple Vision Pro:
+                        inovação ao alcance dos olhos.
+                    </p>
+                    <button class="btn">Saiba Mais!</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrows">
+            <button class="arrow-btn" id="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                    class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                    <path
+                        d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                </svg>
+            </button>
+
+            <button class="arrow-btn" id="next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="indicador">
+            <div class="numbers">01</div>
+            <div class="dots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </main>
+    <section class="produtos" id="prod">
+        <div class="titulo-prod">
+            <p>Produtos em Destaque</p>
+        </div>
+        
+        <div class="produtos-grid">
+            <div class="produto-card">
+                <div class="produto-card-img">
+                    <img src="{{ asset('img/apple-watch.png') }}" alt="Apple Watch">
+                </div>
+                <div class="produto-card-content">
+                    <p class="card-tag">Novo</p>
+                    <h3>Apple Watch Series 10</h3>
+                    <p class="card-desc">O smartwatch mais avançado. GPS, AMOLED, saúde completa.</p>
+                    <div class="card-price">
+                        <span class="price">R$ 3.999</span>
+                        <button class="card-btn">Mais Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="produto-card">
+                <div class="produto-card-img">
+                    <img src="{{ asset('img/air-pods.png') }}" alt="Air Pods Max">
+                </div>
+                <div class="produto-card-content">
+                    <p class="card-tag">Premium</p>
+                    <h3>Air Pods Max</h3>
+                    <p class="card-desc">Som premium com cancelamento de ruído adaptativo.</p>
+                    <div class="card-price">
+                        <span class="price">R$ 4.999</span>
+                        <button class="card-btn">Mais Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="produto-card">
+                <div class="produto-card-img">
+                    <img src="{{ asset('img/vision-pro.png') }}" alt="Vision Pro">
+                </div>
+                <div class="produto-card-content">
+                    <p class="card-tag">Inovação</p>
+                    <h3>Vision Pro</h3>
+                    <p class="card-desc">Realidade aumentada imersiva de próxima geração.</p>
+                    <div class="card-price">
+                        <span class="price">R$ 19.999</span>
+                        <button class="card-btn">Mais Info</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contato" id="contatos">
+        <div class="titulo-contato">
+            <p>Entre em contato!</p>
+        </div>
+        <div class="card-contato">
+            <div class="Nome">
+                <p>Nome  Completo:</p>
+                <input type="text">
+            </div>
+            <div class="email">
+                <p>E-mail:</p>
+                <input type="email">
+            </div>
+            <div class="numero">
+                <p>Numero de Telefone: </p>
+                <input type="number">
+            </div>
+            <button class="envio">Enviar!</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>DevClub Store</h4>
+                <p>Inovação em tecnologia ao seu alcance</p>
+            </div>
+            <div class="footer-section">
+                <h5>Links Rápidos</h5>
+                <ul>
+                    <li><a href="#main">Inicio</a></li>
+                    <li><a href="#prod">Produtos</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h5>Redes Sociais</h5>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h5>Contato</h5>
+                <p>Email: themateusbr007@gmail.com</p>
+                <p>Phone: (43)99140-9458</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DevClub Store. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="{{ asset('js/script.js') }}"></script>
+</body>
+</html>
