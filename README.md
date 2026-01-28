@@ -1,59 +1,215 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<!DOCTYPE html>
+<html lang="pt-br">
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevClub Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+</head>
 
-## About Laravel
+<body>
+    <header>
+        <div class="logo">DevClub Store</div>
+        <nav>
+            <ul>
+                <li><a href="#main">Inicio</a></li>
+                <li><a href="#prod">Produtos</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+    <main class="container" id="main">
+        <div class="tech-circulo">
+            <div class="circulo"></div>
+            <div class="circulo"></div>
+            <div class="circulo"></div>
+            <div class="circulo"></div>
+        </div>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+        <div class="list">
+            <div class="item active">
+                <div class="produto-img">
+                    <img src="{{ asset('img/apple-watch.png') }}" alt="Apple Watch">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Novo Lançamento</p>
+                    <p class="product-name">Apple Watch Series 10</p>
+                    <p class="desc">O smartwatch mais avançado do mercado.
+                        Monitoramento completo de saúde, GPS integrado, tela AMOLED de alta resolução e bateria de longa
+                        duração. Perfeito para acompanhar seu estilo de vida ativo
+                    </p>
+                    <button class="btn">Saiba Mais!</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="produto-img">
+                    <img src="{{ asset('img/air-pods.png') }}" alt="Air Pods Max">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Som Premium</p>
+                    <p class="product-name">Air Pods Max</p>
+                    <p class="desc">
+                        Experimente o som em sua forma mais pura. Cancelamento de ruído adaptativo, qualidade de áudio
+                        excepcional e design ergonômico para o máximo conforto. Sua música nunca soou tão bem.
+                    </p>
+                    <button class="btn">Saiba Mais!</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="produto-img">
+                    <img src="{{ asset('img/vision-pro.png') }}" alt="Vision Pro">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Alta Performance</p>
+                    <p class="product-name">Vision Pro</p>
+                    <p class="desc">Realidade aumentada imersiva com o Apple Vision Pro:
+                        inovação ao alcance dos olhos.
+                    </p>
+                    <button class="btn">Saiba Mais!</button>
+                </div>
+            </div>
+        </div>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+        <div class="arrows">
+            <button class="arrow-btn" id="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                    class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                    <path
+                        d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                </svg>
+            </button>
 
-## Learning Laravel
+            <button class="arrow-btn" id="next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                </svg>
+            </button>
+        </div>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+        <div class="indicador">
+            <div class="numbers">01</div>
+            <div class="dots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </main>
+    <section class="produtos" id="prod">
+        <div class="titulo-prod">
+            <p>Produtos em Destaque</p>
+        </div>
+        
+        <div class="produtos-grid">
+            <div class="produto-card">
+                <div class="produto-card-img">
+                    <img src="{{ asset('img/apple-watch.png') }}" alt="Apple Watch">
+                </div>
+                <div class="produto-card-content">
+                    <p class="card-tag">Novo</p>
+                    <h3>Apple Watch Series 10</h3>
+                    <p class="card-desc">O smartwatch mais avançado. GPS, AMOLED, saúde completa.</p>
+                    <div class="card-price">
+                        <span class="price">R$ 3.999</span>
+                        <button class="card-btn">Mais Info</button>
+                    </div>
+                </div>
+            </div>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+            <div class="produto-card">
+                <div class="produto-card-img">
+                    <img src="{{ asset('img/air-pods.png') }}" alt="Air Pods Max">
+                </div>
+                <div class="produto-card-content">
+                    <p class="card-tag">Premium</p>
+                    <h3>Air Pods Max</h3>
+                    <p class="card-desc">Som premium com cancelamento de ruído adaptativo.</p>
+                    <div class="card-price">
+                        <span class="price">R$ 4.999</span>
+                        <button class="card-btn">Mais Info</button>
+                    </div>
+                </div>
+            </div>
 
-## Laravel Sponsors
+            <div class="produto-card">
+                <div class="produto-card-img">
+                    <img src="{{ asset('img/vision-pro.png') }}" alt="Vision Pro">
+                </div>
+                <div class="produto-card-content">
+                    <p class="card-tag">Inovação</p>
+                    <h3>Vision Pro</h3>
+                    <p class="card-desc">Realidade aumentada imersiva de próxima geração.</p>
+                    <div class="card-price">
+                        <span class="price">R$ 19.999</span>
+                        <button class="card-btn">Mais Info</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contato" id="contatos">
+        <div class="titulo-contato">
+            <p>Entre em contato!</p>
+        </div>
+        <div class="card-contato">
+            <div class="Nome">
+                <p>Nome  Completo:</p>
+                <input type="text">
+            </div>
+            <div class="email">
+                <p>E-mail:</p>
+                <input type="email">
+            </div>
+            <div class="numero">
+                <p>Numero de Telefone: </p>
+                <input type="number">
+            </div>
+            <button class="envio">Enviar!</button>
+        </div>
+    </section>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>DevClub Store</h4>
+                <p>Inovação em tecnologia ao seu alcance</p>
+            </div>
+            <div class="footer-section">
+                <h5>Links Rápidos</h5>
+                <ul>
+                    <li><a href="#main">Inicio</a></li>
+                    <li><a href="#prod">Produtos</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h5>Redes Sociais</h5>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h5>Contato</h5>
+                <p>Email: themateusbr007@gmail.com</p>
+                <p>Phone: (43)99140-9458</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DevClub Store. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+    <script src="{{ asset('js/script.js') }}"></script>
+</body>
+</html>
