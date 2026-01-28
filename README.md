@@ -24,7 +24,6 @@
             </ul>
         </nav>
     </header>
-
     <main class="container" id="main">
         <div class="tech-circulo">
             <div class="circulo"></div>
@@ -32,7 +31,6 @@
             <div class="circulo"></div>
             <div class="circulo"></div>
         </div>
-
         <div class="list">
             <div class="item active">
                 <div class="produto-img">
@@ -76,7 +74,6 @@
                 </div>
             </div>
         </div>
-
         <div class="arrows">
             <button class="arrow-btn" id="prev">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
@@ -85,7 +82,6 @@
                         d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
                 </svg>
             </button>
-
             <button class="arrow-btn" id="next">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
                     class="bi bi-caret-right-fill" viewBox="0 0 16 16">
@@ -94,7 +90,6 @@
                 </svg>
             </button>
         </div>
-
         <div class="indicador">
             <div class="numbers">01</div>
             <div class="dots">
@@ -108,7 +103,6 @@
         <div class="titulo-prod">
             <p>Produtos em Destaque</p>
         </div>
-        
         <div class="produtos-grid">
             <div class="produto-card">
                 <div class="produto-card-img">
@@ -124,7 +118,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="produto-card">
                 <div class="produto-card-img">
                     <img src="{{ asset('img/air-pods.png') }}" alt="Air Pods Max">
@@ -139,7 +132,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="produto-card">
                 <div class="produto-card-img">
                     <img src="{{ asset('img/vision-pro.png') }}" alt="Vision Pro">
@@ -176,7 +168,6 @@
             <button class="envio">Enviar!</button>
         </div>
     </section>
-
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
